@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord Hanuman Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .photo {
+            margin: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .photo img {
+            width: 300px; /* Adjust the width to your preference */
+            height: 500px; /* Adjust the height to your preference */
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lord Hanuman Gallery</h1>
+    </header>
+    <div>     </div>
+    <div>     </div>
+    <div>     </div><br><br><br>
+    <div class="gallery">
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic1.jpg" alt="Hanuman 1">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic2.jpg" alt="Hanuman 2">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic3.jpg" alt="Hanuman 3">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic4.jpg" alt="Hanuman 4">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic5.jpeg" alt="Hanuman 5">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic6.jpeg" alt="Hanuman 6">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic7.jpg" alt="Hanuman 7">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic8.jpg" alt="Hanuman 8">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic9.jpeg" alt="Hanuman 9">
+        </div>
+        <div class="photo" onmouseover="animateImage(this)" onmouseout="resetImage(this)">
+            <img src="D:\public_list\pic10.jpeg" alt="Hanuman 10">
+        </div>
+        <!-- Add more photo divs with images (hanuman4.jpg, hanuman5.jpg, etc.) -->
+    </div>
+    <script>
+        function animateImage(element) {
+            element.style.transform = 'scale(1.2)';
+        }
+
+        function resetImage(element) {
+            element.style.transform = 'scale(1)';
+        }
+
+        // You can add more images and descriptions for each image in your gallery.
+    </script>
+</body>
+</html>
